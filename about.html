@@ -15,7 +15,7 @@
         }
 
         body {
-            background-color: rgb(20, 6, 6);
+            background-color: rgb(34, 31, 31);
             color: aliceblue;
             font-family: 'Times New Roman', Times, serif;
         }
@@ -44,7 +44,7 @@
         }
 
         nav ul li a:hover {
-            color: rgb(124, 124, 153);
+            color: rgb(209, 69, 88);
         }
 
         .first {
@@ -64,6 +64,25 @@
             margin: 30px 0;
             line-height: 1.6;
         }
+
+        .first .button {
+            height: 40px;
+            width: 200px;
+        }
+
+        .first .button button {
+            height: 100%;
+            width: 100%;
+            border: 2px solid rgb(59, 165, 214);
+            background: rgb(69, 96, 218);
+            color: #fff;
+            font-size: 22px;
+            font-weight: 500;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
         footer {
             background-color: rgb(134, 54, 54);
             height: 150px;
@@ -88,17 +107,16 @@
             color: rgb(145, 84, 84);
             padding: 12px 0;
         }
-        
     </style>
     <header>
         <nav>
             <div class="left">Alex Martine</div>
             <div class="right">
                 <ul>
-                    <li><a href="index.html.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="service.html">Services</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html.html"><b>Home</b></a></li>
+                    <li><a href="about.html"><b>About</b></a></li>
+                    <li><a href="service.html"><b>Services</b></a></li>
+                    <li><a href="contact.html"><b>Contact</b></a></li>
                 </ul>
             </div>
         </nav>
@@ -107,17 +125,22 @@
         <center>
             <div class="first">
                 <h2><em>About Me</em></h2>
-                <p>With a passion for justice and a commitment to serving clients with integrity, <b
+                <p style="font-size: large;">With a passion for justice and a commitment to serving clients with integrity, <b
                         style="size: 2px;">Alex</b> is a seasoned attorney specializing in every area. Known for my
                     strategic approach and attention to detail, I bring a wealth of experience and expertise to every
                     case I handle. My dedication to advocating for my clients' rights and achieving favorable outcomes
                     sets me apart in the legal field.</p>
-                <p>Driven by a desire to make a positive impact in the lives of his clients, <b
+                <p style="font-size: large;">Driven by a desire to make a positive impact in the lives of his clients, <b
                         style="size: 2px;">Alex</b> combines legal expertise with empathy and understanding, ensuring
                     that each client receives personalized attention and support throughout the legal process. He
                     believes in building strong, collaborative relationships with clients, empowering them with the
                     knowledge and guidance they need to make informed decisions about their legal matters.</p>
+                    <div class="button">
+                        <button type="submit">LinkedIn<i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
             </div>
+           
         </center>
     </main>
     <footer>
@@ -150,8 +173,8 @@
                 AlexMrtineP @ All rights reserved
             </div>
         </div>
-        
-    
+
+
 </body>
 
 </html>
