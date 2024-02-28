@@ -46,11 +46,20 @@
         nav ul li a:hover {
             color: rgb(209, 69, 88);
         }
+        .left {
+            font-size: 1rem;
+            color: rgb(238, 57, 57);
+        }
+        @media (max-width:600px) {
+            .left {
+                display: none;
+            }
+        }
 
         .first {
             max-width: 80vw;
             margin: 80px 0;
-            height: 80vh;
+            height: 110vh;
             align-items: center;
         }
 
@@ -66,13 +75,13 @@
         }
 
         .first .button {
-            height: 60px;
+            height: 80px;
             width: 200px;
         }
 
         .first .button button {
             height: 100%;
-            width: 100%;
+            width: 101%;
             border: 2px solid rgb(59, 165, 214);
             background: rgb(69, 96, 218);
             color: #fff;
@@ -85,7 +94,8 @@
 
         footer {
             background-color: rgb(134, 54, 54);
-            height: 150px;
+            height: 180px;
+            width: 100%;
         }
 
         .footer {
@@ -107,13 +117,19 @@
             color: rgb(145, 84, 84);
             padding: 12px 0;
         }
+        @media (max-width:600px) {
+            .footer ul {
+                display: none;
+                
+            }
+        }
     </style>
     <header>
         <nav>
             <div class="left">Alex Martine</div>
             <div class="right">
                 <ul>
-                    <li><a href="index.html.html"><b>Home</b></a></li>
+                    <li><a href="https://yoryomnat.github.io/alex_M/"><b>Home</b></a></li>
                     <li><a href="about.html"><b>About</b></a></li>
                     <li><a href="service.html"><b>Services</b></a></li>
                     <li><a href="contact.html"><b>Contact</b></a></li>
