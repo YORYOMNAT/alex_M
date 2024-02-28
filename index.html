@@ -27,12 +27,8 @@
         nav {
             display: flex;
             justify-content: space-around;
-            text-align: center;
-            height: 3rem;
-            width: 100%;
-            padding-top: 10px;
-             
-
+            align-items: center;
+            height: 40px;
         }
 
         nav ul {
@@ -66,6 +62,12 @@
 
         .left {
             font-size: 1rem;
+            color: rgb(238, 57, 57);
+        }
+        @media (max-width:600px) {
+            .left {
+                display: none;
+            }
         }
 
         .one {
@@ -92,20 +94,26 @@
 
         .leftsection .btn {
             padding: 1.0rem;
-            background: rgb(218, 174, 177);
-            color: rgb(228, 19, 19);
+            background: rgb(223, 173, 177);
+            color: rgb(37, 2, 2);
             border: 2px rgb(199, 148, 148);
-            border-radius: 0.2rem;
+            border-radius: 1rem;
             font-size: 1rem;
             cursor: pointer;
             margin: 0.6rem;
         }
 
         .rightsection img {
-            width: 10rem;
-            margin: 0.2rem;
+            width: 20rem;
+            margin-left: 5px;
             flex-wrap: wrap;
-            padding-left: 0.2px;
+            
+        }
+        @media  (max-width:600px) {
+            .rightsection img {
+                display: none;
+                
+            }
         }
 
         .purpel {
@@ -239,6 +247,12 @@
             color: rgb(145, 84, 84);
             padding: 12px 0;
         }
+        @media (max-width:600px) {
+            .footer ul {
+                display: none;
+
+            }
+        }
     </style>
 
     <header>
@@ -246,7 +260,7 @@
             <div class="left"><b>Alex Martine</b></div>
             <div class="right">
                 <ul>
-                    <li><a href="index.html.html"><b>Home</b></a></li>
+                    <li><a href="https://yoryomnat.github.io/alex_M/"><b>Home</b></a></li>
                     <li><a href="about.html"><b>About</b></a></li>
                     <li><a href="service.html"><b>Services</b></a></li>
                     <li><a href="contact.html"><b>Contact</b></a></li>
