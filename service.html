@@ -46,61 +46,60 @@
         nav ul li a:hover {
             color: rgb(209, 69, 88);
         }
+        .left {
+            font-size: 1rem;
+            color: rgb(238, 57, 57);
+        }
+        @media (max-width:600px) {
+            .left {
+                display: none;
+            }
+        }
 
         .oneline {
-            max-width: 80vw;
+            max-width: 100vw;
 
-            height: 90vh;
-            align-items: center;
+            height: 110vh;
+            
         }
 
         .oneline h1 {
             font-size: 1.6rem;
-            align-items: center;
+            text-align: center;
             margin: 50px 0;
         }
 
         .oneline p {
-            margin: 30px 0;
+            margin: 20px 0;
             line-height: 2.0;
             height: fit-content;
+            text-align: center;
+            padding: 1rem;
+
         }
 
         .oneline .button {
-            padding: 50px 0;
+            padding: 5rem 1rem;
+            justify-content: space-around;
+            text-align: center;
         }
 
         .oneline .btn {
-            padding: 12px;
+            padding: 1rem;
             background: rgb(53, 42, 43);
             color: white;
             border: 2px whitesmoke;
             border-radius: 6px;
             font-size: 20px;
             cursor: pointer;
+            margin: 0.6rem;
         }
 
-        .varients {
-            justify-content: space-around;
-            align-items: center;
-
-        }
-
-        .varients h2 {
-            max-width: 80vw;
-            margin: 40px 0;
-            height: 1px;
-
-        }
-
-        .varients ul {
-            justify-content: center;
-        }
-
-        .varients ul li {
-            list-style: circle;
-            margin: 30px 0;
-            line-height: 1.6;
+        @media only screen and (max-width:600px) {
+            .oneline .button {
+                flex-wrap: wrap;
+                
+            }
         }
 
 
@@ -129,13 +128,18 @@
             color: rgb(145, 84, 84);
             padding: 12px 0;
         }
+        @media (max-width:600px) {
+            .footer ul {
+                display: none;
+                
+            } }
     </style>
     <header>
         <nav>
             <div class="left">Alex Martine</div>
             <div class="right">
                 <ul>
-                    <li><a href="index.html.html"><b>Home</b></a></li>
+                    <li><a href="https://yoryomnat.github.io/alex_M/"><b>Home</b></a></li>
                     <li><a href="about.html"><b>About</b></a></li>
                     <li><a href="service.html"><b>Services</b></a></li>
                     <li><a href="contact.html"><b>Contact</b></a></li>
@@ -144,7 +148,7 @@
         </nav>
     </header>
     <main>
-        <center>
+        
             <div class="oneline">
                 <h1><em><b>Our Services</b></em></h1>
                 <p style="font-size: large;">Are you facing a legal challenge and seeking professional guidance to navigate the complexities of
@@ -158,7 +162,7 @@
                 </div>
             </div>
 
-        </center>
+        
 
 
         </div>
