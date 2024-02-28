@@ -46,11 +46,20 @@
         nav ul li a:hover {
             color: rgb(209, 69, 88);
         }
+        .left {
+            font-size: 1rem;
+            color: rgb(238, 57, 57);
+        }
+        @media (max-width:600px) {
+            .left {
+                display: none;
+            }
+        }
 
         .first {
             max-width: 80vw;
             margin: 80px 0;
-            height: 90vh;
+            height: 60vh;
             align-items: center;
         }
 
@@ -66,29 +75,29 @@
             font-size: medium;
         }
 
-        .left .onw h1 {
+        .Pleft .onw h1 {
             max-width: 80vw;
             margin: 80px 0;
-            height: 90vh;
+            height: 40vh;
         }
 
-        .left .onw p {
+        .Pleft .onw p {
             margin: 30px 0;
             line-height: 2.2;
         }
 
-        .left .two p {
+        .Pleft .two p {
             margin: 40px 0;
             line-height: 1.6;
         }
 
-        .left .third h3 {
+        .Pleft .third h3 {
             max-width: 80vw;
             margin: 40px 0;
             height: 5px;
         }
 
-        .left .third p {
+        .Pleft .third p {
             margin: 30px 0;
             line-height: 1.6;
         }
@@ -105,17 +114,22 @@
 
         .right form .fields,
         .right form .field {
-            height: 45px;
+            height: 40px;
             width: 100%;
-            margin-bottom: 15px;
+            margin-bottom: 14px;
         }
 
         .right form .name {
-            margin-right: 10px;
+            margin-right: 6px;
+            width: 45%;
         }
 
         .right form .email {
-            margin-left: 10px;
+            margin-left: 1.6px;
+            width: 40%;
+        }
+        .right form .subject {
+            width: 90%;
         }
 
         .right form .textarea {
@@ -136,12 +150,13 @@
         }
 
         .right form .textarea textarea {
-            padding-top: 10px;
+            padding-top: 2px;
         }
 
         .right form .button {
             height: 40px;
             width: 200px;
+            padding-bottom: 0.5px;
         }
 
         .right form .button button {
@@ -152,9 +167,10 @@
             color: #fff;
             font-size: 22px;
             font-weight: 500;
-            border-radius: 6px;
+            border-radius: 4px;
             transition: all 0.3s ease;
             cursor: pointer;
+            padding-bottom: 5px;
         }
 
         .right form .button button:hover {
@@ -187,13 +203,19 @@
             color: rgb(216, 149, 149);
             padding: 12px 0;
         }
+        @media (max-width:600px) {
+            .footer ul {
+                display: none;
+
+            }
+        }
     </style>
     <header>
         <nav>
             <div class="left">Alex Martine</div>
             <div class="right">
                 <ul>
-                    <li><a href="index.html.html"><b>Home</b></a></li>
+                    <li><a href="https://yoryomnat.github.io/alex_M/"><b>Home</b></a></li>
                     <li><a href="about.html"><b>About</b></a></li>
                     <li><a href="service.html"><b>Services</b></a></li>
                     <li><a href="contact.html"><b>Contact</b></a></li>
@@ -216,7 +238,7 @@
             </div>
 
         </center>
-        <div class="column left">
+        <div class="column Pleft">
             <div class="onw">
                 <h2>Office Address</h2>
                 <p>3A, Building Number:5 <br>25HB, New York</p>
@@ -232,9 +254,9 @@
 
             </div>
         </div>
-        <center>
+        
         <div class="column right">
-            <div class="text"><b><em>Message Me</em></b></div>
+            <div class="text"><b style="color: palevioletred;"><em>Message Me</em></b></div>
             <form action="#">
                 <div class="fields">
                     <div class="field name">
@@ -244,20 +266,20 @@
                         <input type="email" placeholder="Email" name="email" required>
                     </div>
                 </div>
-                <div class="field">
+                <div class="field subject">
                     <input type="text" placeholder="Subject" required>
                 </div>
                 <div class="field textarea">
-                    <textarea cols="30" rows="10" placeholder="Describe Project..." required></textarea>
+                    <textarea cols="30" rows="10" placeholder="Describe.." required></textarea>
                 </div>
                 <div class="button">
-                    <button type="submit">Send Message <i class="fas fa-paper-plane"></i>
+                    <button type="submit">Send Message 
                     </button>
                 </div>
             </form>
         </div>
         </div>
-        </center>
+        
     </main>
     <footer>
         <div class="footer">
