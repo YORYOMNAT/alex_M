@@ -21,13 +21,17 @@
             background-color: rgb(34, 31, 31);
             color: aliceblue;
             font-family: 'Times New Roman', Times, serif;
+            
         }
 
         nav {
             display: flex;
             justify-content: space-around;
             align-items: center;
-            height: 40px;
+            height: 4rem;
+            @media screen and(max-width:600px) {
+                padding: 14px 5px;
+            }
 
         }
 
@@ -79,22 +83,25 @@
         }
 
         .leftsection .button {
-            padding: 50px 0;
+            padding: 5rem 1rem;
+            
+            
         }
 
         .leftsection .btn {
-            padding: 12px;
+            padding: 1.0rem;
             background: rgb(218, 174, 177);
             color: rgb(228, 19, 19);
             border: 2px rgb(199, 148, 148);
-            border-radius: 6px;
-            font-size: 20px;
+            border-radius: 0.2rem;
+            font-size: 1rem;
             cursor: pointer;
+            margin: 0.6rem;
         }
 
         .rightsection img {
-            width: 80%;
-            margin: 50px 0;
+            width: 14rem;
+            margin: 1rem;
         }
 
         .purpel {
@@ -125,7 +132,7 @@
 
         .CLL {
             width: 100%;
-            height: 10vh;
+            height: 45vh;
             color: rgb(201, 167, 167);
             display: flex;
             align-items: center;
@@ -205,7 +212,7 @@
 
         footer {
             background-color: rgb(134, 54, 54);
-            height: 150px;
+            height: 180px;
             width: 100%;
         }
 
